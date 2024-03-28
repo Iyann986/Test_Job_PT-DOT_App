@@ -3,6 +3,8 @@ import 'package:intl/date_symbol_data_local.dart';
 
 import 'package:intl/intl.dart';
 import 'package:test_job_pt_dot_app/utils/const/theme.dart';
+import 'package:test_job_pt_dot_app/view/screen/category/kategori.dart';
+import 'package:test_job_pt_dot_app/view/screen/home/home_screen.dart';
 
 class TambahPengeluaranBaru extends StatefulWidget {
   const TambahPengeluaranBaru({super.key});
@@ -83,7 +85,14 @@ class _TambahPengeluaranBaruState extends State<TambahPengeluaranBaru> {
                           width: 30,
                           height: 30,
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Kategori(),
+                            ),
+                          );
+                        },
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
@@ -137,6 +146,12 @@ class _TambahPengeluaranBaruState extends State<TambahPengeluaranBaru> {
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
                         // Handle form submission
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const HomeScreen(),
+                          ),
+                        );
                       }
                     },
                     style: ButtonStyle(
