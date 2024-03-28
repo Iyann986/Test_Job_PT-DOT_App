@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_job_pt_dot_app/utils/const/theme.dart';
+import 'package:test_job_pt_dot_app/view/screen/add%20expense/tambah_pengeluaran_baru.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -497,7 +498,14 @@ class _HomeScreenState extends State<HomeScreen> {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50),
         ),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const TambahPengeluaranBaru(),
+            ),
+          );
+        },
         child: const Icon(Icons.add),
       ),
     );
