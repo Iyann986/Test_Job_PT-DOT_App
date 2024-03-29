@@ -38,81 +38,84 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   const SizedBox(height: 20),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.only(
-                            left: 20, top: 20, right: 45, bottom: 20),
-                        decoration: BoxDecoration(
-                          color: const Color(0xff0A97B0),
-                          borderRadius: BorderRadius.circular(20),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 5),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.only(
+                              left: 10, top: 10, right: 25, bottom: 20),
+                          decoration: BoxDecoration(
+                            color: const Color(0xff0A97B0),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Pengeluaranmu',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                              Text(
+                                'hari ini',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
+                              ),
+                              const SizedBox(height: 14),
+                              Text(
+                                'Rp. 30.000',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Pengeluaranmu',
-                              style: whiteFont14.copyWith(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
+                        Container(
+                          padding: const EdgeInsets.only(
+                              left: 10, top: 10, right: 25, bottom: 20),
+                          decoration: BoxDecoration(
+                            color: const Color(0xff46B5A7),
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Pengeluaranmu',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
                               ),
-                            ),
-                            Text(
-                              'hari ini',
-                              style: whiteFont14.copyWith(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
+                              Text(
+                                'bulan ini',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.normal,
+                                ),
                               ),
-                            ),
-                            const SizedBox(height: 14),
-                            Text(
-                              'Rp. 30.000',
-                              style: whiteFont14.copyWith(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
+                              const SizedBox(height: 14),
+                              Text(
+                                'Rp. 335.500',
+                                style: whiteFont14.copyWith(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                      ),
-                      Container(
-                        padding: const EdgeInsets.only(
-                            left: 20, top: 20, right: 45, bottom: 20),
-                        decoration: BoxDecoration(
-                          color: const Color(0xff46B5A7),
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Pengeluaranmu',
-                              style: whiteFont14.copyWith(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                            Text(
-                              'bulan ini',
-                              style: whiteFont14.copyWith(
-                                fontSize: 16,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                            const SizedBox(height: 14),
-                            Text(
-                              'Rp. 335.500',
-                              style: whiteFont14.copyWith(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                   const SizedBox(height: 20),
                   Padding(
