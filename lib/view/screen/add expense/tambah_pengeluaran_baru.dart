@@ -36,12 +36,22 @@ class _TambahPengeluaranBaruState extends State<TambahPengeluaranBaru> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: true,
-        title: Text(
-          "Tambah Pengeluaran Baru",
-          style: blackFont19,
-        ),
-      ),
+          centerTitle: true,
+          title: Text(
+            "Tambah Pengeluaran Baru",
+            style: blackFont19,
+          ),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const HomeScreen(),
+                ),
+              );
+            },
+          )),
       body: SingleChildScrollView(
         child: Form(
           key: formKey,
